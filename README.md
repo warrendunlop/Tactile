@@ -3,7 +3,7 @@ Beautiful LaunchBox / BigBox game startup and shutdown screens, bringing a tacti
 
 ## Changelog
 ### V1
-Support for 2560x1440 only so far. Will have to transition from transforms and scaling to proper grids to support more resolutions. 1080p and 720p work *ok* with some cart aligment issues - disc systems should work fine.
+Support for 2560x1440 only so far. Will have to transition from transforms and scaling to proper grids to support more resolutions. 1080p and 720p work *ok* with some cart aligment issues - disc systems should work fine. (Uses the startup theme StageBox as a launch  point. Much thanks to Faeran)
 
 [![Video Preview](https://i.ibb.co/gms6skS/Tactile-preview.jpg)](https://forums.launchbox-app.com/uploads/monthly_2020_06/1510786514_2020-06-0200-46-58.mp4.6b4cfe84a773197d7e878dacde779b3d.mp4)
 
@@ -11,7 +11,7 @@ Support for 2560x1440 only so far. Will have to transition from transforms and s
 
 <br/>
 
-**Systems supported:**
+#### Systems supported:
 * Atari 2600
 * Atari 5200
 * Microsoft Xbox
@@ -37,5 +37,5 @@ Support for 2560x1440 only so far. Will have to transition from transforms and s
 
 
 
-**Known issues**
+#### Known issues
 Haven't tested with varying cart/disc image sizes. Results may vary. The majority of my collection
