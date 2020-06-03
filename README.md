@@ -16,18 +16,26 @@ Support for 2560x1440 only so far. Will have to transition from transforms and s
 * Atari 5200
 * Microsoft Xbox
 * Nintendo 64
+* Nintendo DS
 * Nintendo Entertainment System
+* Nintendo Game Boy
+* Nintendo Game Boy Advance
+* Nintendo Game Boy Color
 * Nintendo Gamecube
 * Nintendo Wii
 * Nintendo Wii U
 * Sega Dreamcast
+* Sega Game Gear
 * Sega Genesis *may support megadrive later if there is interest*
 * Sega Saturn
 * SNK Neo Geo AES
 * Sony Playstation
 * Sony Playstation 2
 * Sony Playstation 3
+* Sony PSP
 * Super Nintendo Entertainment System
+
+
 
 **Known issues**
 Haven't tested with varying cart/disc image sizes. Results may vary. The majority of my collection
