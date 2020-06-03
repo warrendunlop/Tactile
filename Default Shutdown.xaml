@@ -1,0 +1,101 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="562"
+             d:DesignWidth="1000"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             FocusVisualStyle="{x:Null}"
+             BorderThickness="0"
+             Margin="0"
+             Padding="0"
+             Background="#000">
+  <Canvas Name="Canvas">
+    <Grid Height="{Binding ElementName=Canvas, Path=ActualHeight}" Width="{Binding ElementName=Canvas, Path=ActualWidth}">
+
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="1*" />
+          <RowDefinition Height="20*" />
+          <RowDefinition Height="15*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="20*" />
+          <ColumnDefinition Width="30*" />
+        </Grid.ColumnDefinitions>
+        <!-- Screenshot 
+        <Image Grid.Row="1" Grid.Column="1" Source="{Binding SelectedGame.ScreenshotImagePath}" Stretch="Fill" VerticalAlignment="Center" HorizontalAlignment="Center"
+RenderOptions.BitmapScalingMode="HighQuality">
+          <Image.Effect>
+            <BlurEffect Radius="30" />
+          </Image.Effect>
+        </Image>-->
+      </Grid>
+
+      <!-- Background Image -->
+      <Image Source="pack://siteoforigin:,,,/StartupThemes/StageBox/Images/BG.png" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality" />
+
+      <!-- Game Boxes Overlay On Right Side -->
+      <Image Source="pack://siteoforigin:,,,/StartupThemes/StageBox/Images/Overlay.png" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality" />
+
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="1*" />
+          <RowDefinition Height="57*" />
+          <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="30*" />
+          <ColumnDefinition Width="31*" />
+          <ColumnDefinition Width="30*" />
+        </Grid.ColumnDefinitions>
+
+	    <!-- Cart / Disc -->
+            <Image x:Name="DiscImage" Grid.Row="1" Grid.Column="1" Source="{Binding SelectedGame.CartFrontImagePath}" VerticalAlignment="Center"
+                   HorizontalAlignment="Center" RenderOptions.BitmapScalingMode="HighQuality" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <TranslateTransform X="250"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+                <Image.Effect>
+                    <DropShadowEffect BlurRadius="10" Direction="-90" RenderingBias="Quality" ShadowDepth="1" />
+                </Image.Effect>
+            </Image>
+
+            <!-- Default Front Image Path - Usually BoxArt -->
+            <Image x:Name="BoxImage" Grid.Row="1" Grid.Column="1" Source="{Binding SelectedGame.FrontImagePath}" VerticalAlignment="Center" HorizontalAlignment="Center"
+      RenderOptions.BitmapScalingMode="HighQuality" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <TranslateTransform X="-250"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+              <Image.Effect>
+                <DropShadowEffect Direction="270" ShadowDepth="15" BlurRadius="20" />
+              </Image.Effect>
+            </Image>
+
+        <!-- Loading Text Overlay -->
+        <Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="90*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="5*" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="{Binding LoadingWidth}" />
+            <ColumnDefinition Width="{Binding LoadingEmptyWidth}" />
+          </Grid.ColumnDefinitions>
+          <TextBlock Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Game Over" Foreground="Black"
+              HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="1" Typography.Capitals="AllSmallCaps" />
+        </Grid>
+      </Grid>
+    </Grid>
+  </Canvas>
+</UserControl>
