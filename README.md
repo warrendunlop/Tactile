@@ -2,6 +2,12 @@
 Beautiful LaunchBox / BigBox game startup and shutdown screens, bringing a tactile feel to your digital collection.
 
 ## Changelog
+### V1.1
+- Added consoles to disc systems
+- softened console and box blurs
+- ps3 overlay
+- tidied up some images
+
 ### V1
 Support for 2560x1440 only so far. Will have to transition from transforms and scaling to proper grids to support more resolutions. 1080p and 720p work *ok* with some cart aligment issues - disc systems should work fine. (Uses the startup theme StageBox as a launch  point. Much thanks to Faeran)
 
