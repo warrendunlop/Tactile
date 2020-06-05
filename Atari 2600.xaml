@@ -148,9 +148,6 @@
                         <TranslateTransform Y="400"/>
                     </TransformGroup>
                 </Image.RenderTransform>
-              <Image.Effect>
-                <DropShadowEffect Direction="270" ShadowDepth="15" BlurRadius="20" />
-              </Image.Effect>
             </Image>
 
 	    <!-- cart -->
@@ -192,7 +189,7 @@
                     </TransformGroup>
                 </Image.RenderTransform>
               <Image.Effect>
-                <DropShadowEffect Direction="270" ShadowDepth="15" BlurRadius="20" />
+                <DropShadowEffect Direction="-90" ShadowDepth="20" BlurRadius="30" Opacity=".3" />
               </Image.Effect>
             </Image>
 
